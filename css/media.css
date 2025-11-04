@@ -1,0 +1,45 @@
+@media (max-width: 1268px) {
+  .popular-film {
+    width: 32%;
+  }
+}
+
+@media (max-width: 952px) {
+  .popular-film {
+    width: 49%;
+  }
+}
+
+@media (max-width: 678px) {
+  .popular-film {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .recommended-movie--title {
+    margin-bottom: 10px;
+    font-size: 34px;
+    font-weight: 600;
+  }
+
+  .recommended-movie--description {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 1.2;
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .select-filters {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}

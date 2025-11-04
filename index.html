@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film catalog</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="./KS.ico" />
+  </head>
+  <body>
+    <!-- From Uiverse.io by Leoodaviid -->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <p class="loader-text">Loading...</p>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="header-title">КиноСправочник</a>
+          <!-- <form class="form">
+             <input class="search-input" type="text" placeholder="Поиск..." /> 
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form> -->
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="recommended-movie">
+        <div class="container">
+          <div class="recommended-movie--content">
+            <h1 class="recommended-movie--title">Побег из Шоушенка</h1>
+            <p class="recommended-movie--description"></p>
+            <div class="recommended-movie-buttons">
+              <a
+                href="https://lordfilm.ng/filmy/1789-the-shawshank-redemption.html"
+                class="watch-movie"
+                target="_blank"
+              >
+                <i class="fa-solid fa-play"></i>Смотреть
+              </a>
+              <a
+                href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B1%D0%B5%D0%B3_%D0%B8%D0%B7_%D0%A8%D0%BE%D1%83%D1%88%D0%B5%D0%BD%D0%BA%D0%B0"
+                target="_blank"
+                class="More-details"
+              >
+                <i class="fa-solid fa-circle-info"></i>Подробнее
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block-filters container">
+        <h3 class="filters-title">Расширенный поиск</h3>
+        <div class="select-filters">
+          <select class="select" id="selectGenre">
+            <option value="">Все жанры</option>
+            <option value="11">Боевик</option>
+            <option value="13">Комедия</option>
+            <option value="12">Фантастика</option>
+            <option value="30">Реальное ТВ</option>
+          </select>
+          <select class="select" id="selectYear">
+            <option value="">Любой год</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+          </select>
+          <select class="select" id="selectСountry">
+            <option value="">Любая страна</option>
+            <option value="1">США</option>
+            <option value="13">Россия</option>
+            <option value="12">Великобритания</option>
+            <option value="3">Франция</option>
+          </select>
+
+          <button class="apply-filters">
+            <i class="fa-solid fa-filter"></i>Применить фильтры
+          </button>
+        </div>
+      </section>
+      <section class="block-popular-films">
+        <div class="container">
+          <h3 class="block-popular--title">Популярные фильмы</h3>
+          <ul class="popular-films"></ul>
+        </div>
+      </section>
+      <section class="block-new-films">
+        <div class="container">
+          <p class="block-new-films--title">Новинки</p>
+          <ul class="new-films"></ul>
+        </div>
+      </section>
+      <section class="filters-film">
+        <div class="container">
+          <p class="filter-films--title">Ваши фильтры</p>
+          <ul class="filters-films"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 КиноСправочник. Все права защищены.</p>
+      </div>
+    </footer>
+    <script src="./JS/main.js" type="module"></script>
+  </body>
+</html>
